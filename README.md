@@ -28,7 +28,7 @@
 
 ---
 
-<a href="https://fastapi.tiangolo.com">FastAPI</a> is a modern, fast web framework for building APIs with Python 3.6+.
+<a href="https://fastapi.tiangolo.com">FastAPI</a> is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
 
 But if you're here, you probably already knew that!
 
@@ -38,28 +38,28 @@ But if you're here, you probably already knew that!
 
 This package includes a number of utilities to help reduce boilerplate and reuse common functionality across projects:
 
-* **Class Based Views**: Stop repeating the same dependencies over and over in the signature of related endpoints.
-* **Response-Model Inferring Router**: Let FastAPI infer the `response_model` to use based on your return type annotation. 
-* **Repeated Tasks**: Easily trigger periodic tasks on server startup
-* **Timing Middleware**: Log basic timing information for every request
-* **SQLAlchemy Sessions**: The `FastAPISessionMaker` class provides an easily-customized SQLAlchemy Session dependency 
-* **OpenAPI Spec Simplification**: Simplify your OpenAPI Operation IDs for cleaner output from OpenAPI Generator
+- **Class Based Views**: Stop repeating the same dependencies over and over in the signature of related endpoints
+- **Response-Model Inferring Router**: Let FastAPI infer the `response_model` to use based on your return type annotation
+- **Repeated Tasks**: Easily trigger periodic tasks on server startup
+- **Timing Middleware**: Log basic timing information for every request
+- **SQLAlchemy Sessions**: The `FastAPISessionMaker` class provides an easily-customized SQLAlchemy Session dependency
+- **OpenAPI Spec Simplification**: Simplify your OpenAPI Operation IDs for cleaner output from OpenAPI Generator
 
 ---
 
 It also adds a variety of more basic utilities that are useful across a wide variety of projects:
 
-* **APIModel**: A reusable `pydantic.BaseModel`-derived base class with useful defaults
-* **APISettings**: A subclass of `pydantic.BaseSettings` that makes it easy to configure FastAPI through environment variables 
-* **String-Valued Enums**: The `StrEnum` and `CamelStrEnum` classes make string-valued enums easier to maintain
-* **CamelCase Conversions**: Convenience functions for converting strings from `snake_case` to `camelCase` or `PascalCase` and back
-* **GUID Type**: The provided GUID type makes it easy to use UUIDs as the primary keys for your database tables
+- **APIModel**: A reusable `pydantic.BaseModel`-derived base class with useful defaults
+- **APISettings**: A subclass of `pydantic.BaseSettings` that makes it easy to configure FastAPI through environment variables
+- **String-Valued Enums**: The `StrEnum` and `CamelStrEnum` classes make string-valued enums easier to maintain
+- **CamelCase Conversions**: Convenience functions for converting strings from `snake_case` to `camelCase` or `PascalCase` and back
+- **GUID Type**: The provided GUID type makes it easy to use UUIDs as the primary keys for your database tables
 
-See the [docs](https://fastapi-utils.davidmontague.xyz/) for more details and examples. 
+See the [docs](https://fastapi-utils.davidmontague.xyz/) for more details and examples.
 
 ## Requirements
 
-This package is intended for use with any recent version of FastAPI (depending on `pydantic>=1.0`), and Python 3.6+.
+This package is intended to be used with any recent versions of FastAPI and Python 3.7+.
 
 ## Installation
 
